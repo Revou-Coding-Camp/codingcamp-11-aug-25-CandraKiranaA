@@ -1,0 +1,202 @@
+/* ====== Global Style ====== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #fff0f6;
+    color: #4a2c3a;
+}
+
+/* ====== Navbar ====== */
+nav {
+    background: #ff80ab;
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(255, 105, 180, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffe4ec;
+}
+
+/* ====== Section Style ====== */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #d63384;
+    margin-bottom: 20px;
+}
+
+/* ====== Home Section ====== */
+#home {
+    background: linear-gradient(to right, #ff80ab, #ffb6c1);
+    color: white;
+    padding: 80px 20px;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+}
+
+#home p {
+    font-size: 1.2rem;
+}
+
+/* ====== Profile Banner ====== */
+.photo-banner img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(255, 105, 180, 0.3);
+}
+
+/* ====== Headquarters ====== */
+.hq-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.hq-item {
+    width: 120px;
+    height: 120px;
+    background: #ffe4ec;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(255, 105, 180, 0.2);
+    font-weight: bold;
+    color: #d63384;
+    transition: 0.3s;
+}
+
+.hq-item:hover {
+    background: #ff80ab;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* ====== Form ====== */
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.2);
+}
+
+form label {
+    text-align: left;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #d63384;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #f5b6c2;
+    border-radius: 8px;
+    transition: 0.3s;
+    background-color: #fff0f6;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #ff80ab;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 105, 180, 0.5);
+}
+
+form button {
+    padding: 10px;
+    font-size: 1em;
+    background: #ff80ab;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #d63384;
+}
+
+/* ====== Footer ====== */
+footer {
+    text-align: center;
+    background: #ff80ab;
+    color: white;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+/* ====== Result Container ====== */
+.result-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* ====== Result Box ====== */
+.result-box {
+    border: 2px solid #ffb6c1;
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    background: #fff0f6;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(255, 105, 180, 0.2);
+    text-align: left;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #home h1 {
+        font-size: 2rem;
+    }
+}

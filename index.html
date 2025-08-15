@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyTech Solutions - Company Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Our Profile</a></li>
+            <li><a href="#contact">Message Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Hi <span id="userName">Guest</span>, Welcome to SkyTech Solutions</h1>
+        <p>Innovating the Future, Empowering Your Business</p>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <h2>Our Profile</h2>
+        <div class="photo-banner">
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" alt="Company Banner"
+                style="width:100%; max-height:300px; object-fit:cover;">
+        </div>
+        <h3>About the Company</h3>
+        <p>
+            SkyTech Solutions adalah perusahaan teknologi inovatif yang berdiri sejak 2015.
+            Kami menyediakan solusi digital modern untuk membantu bisnis berkembang di era transformasi digital.
+            Layanan kami meliputi pengembangan website, aplikasi mobile, sistem ERP, dan konsultasi IT.
+        </p>
+        <h3>Vision & Mission</h3>
+        <ul>
+            <li><strong>Vision:</strong> Menjadi mitra teknologi terdepan yang membantu bisnis beradaptasi dan tumbuh di
+                era digital.</li>
+            <li><strong>Mission:</strong>
+                <ul>
+                    <li>Menyediakan solusi digital berkualitas tinggi yang mudah diakses.</li>
+                    <li>Memberikan layanan pelanggan yang ramah, cepat, dan profesional.</li>
+                    <li>Menggabungkan teknologi mutakhir dengan ide kreatif untuk menghasilkan inovasi yang bermanfaat.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Headquarters -->
+    <section id="headquarter">
+        <h2>Our Headquarters</h2>
+        <div class="hq-container">
+            <div class="hq-item">Jakarta</div>
+            <div class="hq-item">Bandung</div>
+            <div class="hq-item">Surabaya</div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+        <h2>Message Us</h2>
+        <div class="form-container">
+            <form id="contactForm">
+                <label>Nama :</label>
+                <input type="text" id="name" placeholder="Nama" required>
+
+                <label>Email :</label>
+                <input type="email" id="email" placeholder="Email" required>
+
+                <label>Nomor Telepon :</label>
+                <input type="text" id="phone" placeholder="Nomor Telepon" required>
+
+                <label>Pesan :</label>
+                <textarea id="message" placeholder="Pesan" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <!-- Hasil -->
+            <div class="result-container">
+                <div id="formResult" class="result-box">
+                    <p><strong>Current time:</strong> <span id="currentTime"></span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <p>&copy; 2025 SkyTech Solutions | All Rights Reserved</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
